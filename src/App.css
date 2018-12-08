@@ -7,17 +7,17 @@ html, body {
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 10vmin;
+  height: 7vmin;
   border-radius: 80px;
-  margin: 20px 10px 20px 10px;
+  margin: 20px 10px 10px 15px;
   float: left;
 }
 .App-header {
-  background-color: #ffd9016c;
+  background: linear-gradient(to right,#ffd9016c,  rgba(5, 95, 143, 0.253));
   position: absolute;
   top: 0;
   width: 100%;
-  min-height: 10vh;
+  height: 67px;
   /* display: flex;
   flex-direction: column; */
   align-items: center;
@@ -27,15 +27,68 @@ html, body {
   z-index: 3;
 }
 h1 {
+  margin-top: 15px;
   text-align: left;
+}
+h2 {
+  font-size: 1.1em;
+  margin: 0;
+}
+h2.subhead1 {
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+h2.subhead2 {
+  animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+h2.subhead3 {
+  animation: tracking-in-expand-fwd 3.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+h3 {
+  font-size: 1.3em;
+  color: #5f5102;
+}
+.h3animate:hover {
+  animation: bounce 0.5s forwards;
 }
 a {
   text-decoration: none;
   color: black;
 }
-.background {
+#heroes {
+  /* background-color: rgb(33, 82, 33); */
+  background-color: #055F8F;
   width: 100%;
+  min-height: 423px;
+  display: block;
+}
+.background {
+  margin: 0;
+  width: 637px;
+  float: right;
   z-index: 0;
+}
+#heroes-text {
+  display: flex;
+  direction: column;
+  width: 330px;
+  float: left;
+}
+.left-para {
+  margin: 140px 0 0 75px;
+  width: 40px;
+  float: left;
+  color: white;
+  font-size: 1.8em;
+}
+.right-para {
+  margin: 140px 0 0 80px;
+  width: 130px;
+  color: white;
+  font-size: 1.2em;
+}
+mark {
+  background-color: #ffd901e7;
+  border-radius: 5px;
 }
 .mapArea {
   position: absolute;
@@ -54,13 +107,17 @@ a {
   position: absolute;
   top: 50vh;
 }
+#article-main {
+  display: block;
+}
 .container {
-  margin-top: 20px; 
+  margin-top: 0px; 
   display: flex; 
   direction: column;
   z-index: 2;
-  max-height: 500px;
+  max-height: 400px;
   overflow-y: auto;
+  box-shadow: inset #055F8F 0 0 10px;
 }
 .colA {
   float: left;
@@ -69,17 +126,8 @@ a {
   float: right;
 }
 .extra {
-  height: 500px;;
+  height: 500px;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 button {
 	-moz-box-shadow: 0px 10px 14px -7px #276873;
 	-webkit-box-shadow: 0px 10px 14px -7px #276873;
@@ -116,4 +164,40 @@ button:hover {
 button:active {
 	position:relative;
 	top:1px;
+}
+/* Keyframes */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateZ(0px);
+  } 
+  50% {
+    transform: translateZ(5px);
+  } 
+  100% {
+    transform: translateZ(0);
+  }
 }

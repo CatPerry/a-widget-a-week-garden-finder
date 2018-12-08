@@ -13,10 +13,21 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>Gardens for the People</h1>
+          <h1>Garden for the People</h1>
         </header>
-        <img src={background} alt="community gardens" className="background"/>
-        <article className="article-main">
+        <section id="heroes">
+          <div id="heroes-text">
+            <p className="left-para">
+              <h2 className="subhead1">Eat.</h2><h2 className="subhead2">Share.</h2><h2 className="subhead3">Grow.</h2>
+            </p>
+            <p className="right-para">
+              NY community gardens offering <mark>free,</mark> <mark>organic food</mark> for <mark>all people.</mark><br/>
+              Healthy eating is a right — not a privilege. 
+            </p>
+          </div>
+          <img src={background} alt="community gardens" className="background" />
+        </section>
+        <article id="article-main">
           
           <Json />
           <div className="extra">

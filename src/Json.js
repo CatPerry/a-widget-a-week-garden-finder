@@ -92,11 +92,12 @@ class Json extends Component {
     const { commGard } = this.state;
     const { foodStations } = this.state;
     const { lat , lng } = this.state;
+
     return (
       <div className="container">
         <div className="mapArea"></div>
         <ul className="colA">
-          <h2>Manhattan Gardens</h2>
+          <h3 className="h3animate">Manhattan Gardens</h3>
           {data.map(hit =>
             <li key={`${hit.bbl}${hit.location}`}>
               <p><strong>{hit.name}</strong></p>
@@ -112,7 +113,7 @@ class Json extends Component {
           )}
         </ul>
         <ul className="colA">
-          <h2>Food Markets/Food Boxes</h2>
+          <h3 className="h3animate">Food Markets/Food Boxes</h3>
           {foodStations.map(food =>
             <li key={`${food.address}`}>
               <p><a href={food.website}><strong>{food.facilityname}</strong></a></p>
@@ -129,7 +130,7 @@ class Json extends Component {
           )}
         </ul>
         <ul className="colR">
-          <h2>Community Gardens (all boros)</h2>
+          <h3 className="h3animate">Community Gardens (all boros)</h3>
           {commGard.map(gard =>
             <li key={`${gard.bbl}${gard.address}`}>
               <p><strong>{gard.garden_name}</strong></p>
