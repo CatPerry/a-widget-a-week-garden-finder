@@ -21,8 +21,8 @@ class App extends Component {
               <h2 className="subhead1">Eat.</h2><h2 className="subhead2">Share.</h2><h2 className="subhead3">Grow.</h2>
             </p>
             <p className="right-para">
-              New York community gardens offer free, organic food for all people.<br/>
-              <mark>Healthy eating is a right.</mark> 
+              New York community gardens offer <mark>free, organic food for all people. </mark> 
+               Because healthy eating is a right.
             </p>
           </div>
           <img src={background} alt="community gardens" className="background" />
