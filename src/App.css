@@ -4,16 +4,17 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 7vmin;
+  height: 35px;
   border-radius: 80px;
-  margin: 20px 10px 10px 15px;
+  margin: 20px 20px 10px 25px;
   float: left;
 }
 .App-header {
-  background: linear-gradient(to right,#ffd9016c,  rgba(5, 95, 143, 0.253));
+  background: linear-gradient(to right,#ffd901a1,  rgba(5, 95, 143, 0.103));
   position: absolute;
   top: 0;
   width: 100%;
@@ -27,21 +28,38 @@ html, body {
   z-index: 3;
 }
 h1 {
-  margin-top: 15px;
+  margin: 15px 0 0 30px;
   text-align: left;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  /* font-family: 'Bungee', cursive; */
+  font-family: 'Cabin Sketch', cursive;
+  /* font-family: 'Raleway Dots', cursive; */
+  /* font-family: 'Gruppo', cursive; */
+  /* font-family: 'Love Ya Like A Sister', cursive; */
+  /* font-family: 'Bubblegum Sans', cursive; */
+  /* font-family: 'Londrina Outline', cursive;  */
 }
 h2 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin: 0;
+  font-family: 'Cabin Sketch', cursive;
 }
 h2.subhead1 {
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1s;
+  font-size: 1.6em;
 }
 h2.subhead2 {
-  animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 2s;
+  font-size: 1.6em;
 }
 h2.subhead3 {
-  animation: tracking-in-expand-fwd 3.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 3s;
+  font-size: 1.6em;
 }
 h3 {
   font-size: 1.3em;
@@ -70,18 +88,19 @@ a {
 #heroes-text {
   display: flex;
   direction: column;
-  width: 330px;
+  width: 390px;
   float: left;
 }
 .left-para {
-  margin: 140px 0 0 75px;
+  margin: 140px 0 0 65px;
   width: 40px;
   float: left;
   color: white;
   font-size: 1.8em;
+  line-height: 1.5;
 }
 .right-para {
-  margin: 140px 0 0 80px;
+  margin: 140px 0 0 120px;
   width: 130px;
   color: white;
   font-size: 1.2em;
@@ -174,19 +193,15 @@ button:active {
     transform: rotate(360deg);
   }
 }
-@keyframes tracking-in-expand-fwd {
+@keyframes flip-in-hor-bottom {
   0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-            transform: translateZ(-700px);
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
-  }
   100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
     opacity: 1;
   }
 }

@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>Garden for the People</h1>
+          <h1>Gardens for the People</h1>
         </header>
         <section id="heroes">
           <div id="heroes-text">
@@ -21,8 +21,8 @@ class App extends Component {
               <h2 className="subhead1">Eat.</h2><h2 className="subhead2">Share.</h2><h2 className="subhead3">Grow.</h2>
             </p>
             <p className="right-para">
-              NY community gardens offering <mark>free,</mark> <mark>organic food</mark> for <mark>all people.</mark><br/>
-              Healthy eating is a right — not a privilege. 
+              New York community gardens offer free, organic food for all people.<br/>
+              <mark>Healthy eating is a right.</mark> 
             </p>
           </div>
           <img src={background} alt="community gardens" className="background" />
